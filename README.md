@@ -1,2 +1,2 @@
-# stock-analysis
+# Stock Analysis
 green stock analysis
