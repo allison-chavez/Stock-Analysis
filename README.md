@@ -6,3 +6,14 @@ The purpose of this analysis was to see which Green Energy stocks were going to 
 ## Results
 ### Stock Performance
 The overall stock performance differed in both the years 2017 and 2018.  In 2017, 11 of the 12 Green Energy stocks had a positive annual return, meaning that their value from the beginning of year to the end of the year had a positive return. Meanwhile for the year 2018, there was a negative and drop in the percent of annual return in 10 out of the 12 stocks. The overall return on green stocks dropped in 2018. This analysis was done by obtaining the totalVolume and return for each stock in VBA using the code:
+
+
+
+
+## Summary
+
+### Refactoring general code 
+There are differing advantages to refactoring code, but overall it cuts down run time and allows analysis to be done more efficiently if done properly. The purpose of refactoring code is to improve the code that has been established, meaning to clean up the code and figure out a way to get the same result with less steps or in a way that is more linear when following and understanding. Some of the disadvantages I faced was trying to find more efficient or logical ways to refactor the code. It takes time to take the code you have already completed and try to manipulate it to make it run properly and efficiently. I believe there is room to make mistakes to the code and data results that have already been achieved with the original code.
+
+### Refactoring the original VBA script
+The advantage of refactoring the original script was that the original code could be used as a template for the refactored code. Obtaining a strong knowledge of the original code could be carried over when refactoring the code. The disadvantage for me was really understanding what the refactored code was asking for. In example, changing the names of the variables and trying to take the knowledge already engraved in my head and trying to modify it to get the same result. I think the major disadvantage is that there is a lot of room to get confused when refactoring my original VBA script when missing small points. 
