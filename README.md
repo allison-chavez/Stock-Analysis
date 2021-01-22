@@ -7,8 +7,26 @@ The purpose of this analysis was to see which Green Energy stocks were going to 
 #### Analysis
 The refactoring of my original script was done by changing my variables, adding a tciker index, changing output arrays, and changing my for loops into one consistent for loop to run the code more efficiently. 
 
-```
+Original Code
 
+```
+3a) Initialize variables for starting price and ending price
+    Dim startingPrice As Single
+    Dim endingPrice As Single
+
+'3b) Activate data worksheet
+Worksheets(yearValue).Activate
+    
+'3c) Get the number of rows to loop over
+    'rowCount taken from stackoverflow
+    'rowCount taken from module hint
+    RowCount = Cells(Rows.Count, "A").End(xlUp).Row
+
+    
+'4) Loop through tickers
+     For i = 0 To 11
+       ticker = tickers(i)
+       totalVolume = 0
 '4) Loop through tickers
      For i = 0 To 11
        ticker = tickers(i)
