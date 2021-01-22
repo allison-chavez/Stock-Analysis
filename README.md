@@ -21,12 +21,11 @@ Worksheets(yearValue).Activate
     'rowCount taken from stackoverflow
     'rowCount taken from module hint
     RowCount = Cells(Rows.Count, "A").End(xlUp).Row
-
     
 '4) Loop through tickers
      For i = 0 To 11
        ticker = tickers(i)
-       totalVolume = 0
+       totalVolume = 0 
 '4) Loop through tickers
      For i = 0 To 11
        ticker = tickers(i)
