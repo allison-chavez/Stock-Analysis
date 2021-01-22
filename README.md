@@ -13,6 +13,7 @@ The overall stock performance differed in both the years 2017 and 2018.  In 2017
 There was a major difference when it came to execution times between the original and refactored VBA script. The first time I ran my original script I got a ridiculous number for both years, partially I believe my excel document was lagging.
 When I refactored my code it cut down my run time by over 67,000 seconds for both years. 
 
+Resources-VBA/Screen Shot 2021-01-21 at 6.52.30 PM.png
 ## Summary
 ### Refactoring general code 
 There are differing advantages to refactoring code, but overall it cuts down run time and allows analysis to be done more efficiently if done properly. The purpose of refactoring code is to improve the code that has been established, meaning to clean up the code and figure out a way to get the same result with less steps or in a way that is more linear when following and understanding. Some of the disadvantages I faced was trying to find more efficient or logical ways to refactor the code. It takes time to take the code you have already completed and try to manipulate it to make it run properly and efficiently. I believe there is room to make mistakes to the code and data results that have already been achieved with the original code.
