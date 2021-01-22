@@ -132,8 +132,8 @@ Original code run time
 
 Refactored code run time
 
-![](https://github.com/allison-chavez/stock-analysis/blob/main/Resources-VBA/Screen%20Shot%202021-01-21%20at%207.26.24%20PM.png)
-![](https://github.com/allison-chavez/stock-analysis/blob/main/Resources-VBA/Screen%20Shot%202021-01-21%20at%207.26.46%20PM.png)
+![](https://github.com/allison-chavez/stock-analysis/blob/main/Resources-VBA/VBA_Challenge_2017.png)
+![](https://github.com/allison-chavez/stock-analysis/blob/main/Resources-VBA/VBA_Challenge_2018.png)
 
 ## Summary
 ### Refactoring general code 
