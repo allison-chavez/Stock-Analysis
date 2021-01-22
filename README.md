@@ -4,3 +4,5 @@ In this project I was able to help Steve analyze data in order for him to have a
 #### Purpose
 The purpose of this analysis was to see which Green Energy stocks were going to be the best investment for Steve’s parents. This was completed by running an analysis on the preferred stock, DQ, and then for the other 11 stocks. I completed my initial analysis for all stocks and then was purposely challenged to refactor my code to make it run more efficiently and readily throughout the data. The overall scheme of this project was to provide comprehensible stock data in different efficient ways. 
 ## Results
+### Stock Performance
+The overall stock performance differed in both the years 2017 and 2018.  In 2017, 11 of the 12 Green Energy stocks had a positive annual return, meaning that their value from the beginning of year to the end of the year had a positive return. Meanwhile for the year 2018, there was a negative and drop in the percent of annual return in 10 out of the 12 stocks. The overall return on green stocks dropped in 2018. This analysis was done by obtaining the totalVolume and return for each stock in VBA using the code:
