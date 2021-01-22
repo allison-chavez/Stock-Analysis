@@ -8,15 +8,7 @@ The purpose of this analysis was to see which Green Energy stocks were going to 
 The refactoring of my original script was done by changing my variables, adding a tciker index, changing output arrays, and changing my for loops into one consistent for loop to run the code more efficiently. 
 
 ```
-3b) Activate data worksheet
-Worksheets(yearValue).Activate
-    
-'3c) Get the number of rows to loop over
-    'rowCount taken from stackoverflow
-    'rowCount taken from module hint
-    RowCount = Cells(Rows.Count, "A").End(xlUp).Row
 
-    
 '4) Loop through tickers
      For i = 0 To 11
        ticker = tickers(i)
@@ -52,13 +44,9 @@ Worksheets(yearValue).Activate
     Next i
     
 ```
+
+Refactored Code
 ```
-        'Activate data worksheet
-    Worksheets(yearValue).Activate
-    
-    'Get the number of rows to loop over
-    RowCount = Cells(Rows.Count, "A").End(xlUp).Row
-    
     '1a) Create a ticker Index
         Dim tickerIndex As Single
         tickerIndex = 0
