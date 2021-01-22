@@ -13,7 +13,7 @@ The overall stock performance differed in both the years 2017 and 2018.  In 2017
 There was a major difference when it came to execution times between the original and refactored VBA script. The first time I ran my original script I got a ridiculous number for both years, partially I believe my excel document was lagging.
 When I refactored my code it cut down my run time by over 67,000 seconds for both years. 
 
-The original VBA scirpt code run time:
+- original VBA script run time:
 ![](https://github.com/allison-chavez/stock-analysis/blob/main/Resources-VBA/Screen%20Shot%202021-01-21%20at%206.52.30%20PM.png)
 ![](https://github.com/allison-chavez/stock-analysis/blob/main/Resources-VBA/Screen%20Shot%202021-01-21%20at%206.52.48%20PM.png)
 
@@ -21,8 +21,7 @@ The original VBA scirpt code run time:
 
 
 
-Below is the refactored code run time:
-
+- Below is the refactored code run time:
 ![](https://github.com/allison-chavez/stock-analysis/blob/main/Resources-VBA/Screen%20Shot%202021-01-21%20at%207.26.24%20PM.png)
 ![](https://github.com/allison-chavez/stock-analysis/blob/main/Resources-VBA/Screen%20Shot%202021-01-21%20at%207.26.46%20PM.png)
 
