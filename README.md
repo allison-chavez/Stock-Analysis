@@ -7,8 +7,56 @@ The purpose of this analysis was to see which Green Energy stocks were going to 
 #### Analysis
 The refactoring of my original script was done by changing my variables, adding a tciker index, changing output arrays, and changing my for loops into one consistent for loop to run the code more efficiently. 
 
+```
+3b) Activate data worksheet
+Worksheets(yearValue).Activate
+    
+'3c) Get the number of rows to loop over
+    'rowCount taken from stackoverflow
+    'rowCount taken from module hint
+    RowCount = Cells(Rows.Count, "A").End(xlUp).Row
+
+    
+'4) Loop through tickers
+     For i = 0 To 11
+       ticker = tickers(i)
+       totalVolume = 0
+       
+'5) loop through rows in the data
+    Worksheets(yearValue).Activate
+    For j = 2 To RowCount
+             
+'5a) Get total volume for current ticker
+    If Cells(j, 1).Value = ticker Then
+        totalVolume = totalVolume + Cells(j, 8).Value
+    End If
+    
+'5b) get starting price for current ticker
+    If Cells(j - 1, 1).Value <> ticker And Cells(j, 1).Value = ticker Then
+        startingPrice = Cells(j, 6).Value
+    End If
+        
+'5c) get ending price for current ticker
+    If Cells(j + 1, 1).Value <> ticker And Cells(j, 1).Value = ticker Then
+        endingPrice = Cells(j, 6).Value
+    End If
+    
+    Next j
+     
+'6) Output data for current ticker
+    Worksheets("All Stocks Analysis").Activate
+    Cells(4 + i, 1).Value = ticker
+    Cells(4 + i, 2).Value = totalVolume
+    Cells(4 + i, 3).Value = endingPrice / startingPrice - 1
+    
+    Next i
+    
+```
+
+
 #### Stock Performance
-The overall stock performance differed in both the years 2017 and 2018.  In 2017, 11 of the 12 Green Energy stocks had a positive annual return, meaning that their value from the beginning of year to the end of the year had a positive return. Meanwhile for the year 2018, there was a negative and drop in the percent of annual return in 10 out of the 12 stocks. The overall return on green stocks dropped in 2018. This analysis was done by obtaining the totalVolume and return for each stock in VBA using the code:
+The overall stock performance differed in both the years 2017 and 2018.  In 2017, 11 of the 12 Green Energy stocks had a positive annual return, meaning that their value from the beginning of year to the end of the year had a positive return. Meanwhile for the year 2018, there was a negative and drop in the percent of annual return in 10 out of the 12 stocks. The overall return on green stocks dropped in 2018. This analysis was done by obtaining the totalVolume and return for each stock. As well as adding formatting and conditional formatting functions in VBA to read the data more efficiently. 
+
 #### Run Time Performance
 There was a major difference when it came to execution times between the original and refactored VBA script. The first time I ran my original script I got a ridiculous number for both years, partially I believe my excel document was lagging.
 When I refactored my code it cut down my run time by over 67,000 seconds for both years. 
